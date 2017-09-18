@@ -1,0 +1,174 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.nav img{
+  margin-left:200px;
+
+}
+nav {
+  margin: 50px;
+}
+ 
+.nav ul {
+  overflow: auto;
+  list-style-type: none;
+  position:absolute;
+  left:400px;
+}
+ 
+.nav ul li {
+  height: 25px;
+  float: left;
+  margin-right: 0px;
+  border-right: 1px solid #aaa;
+  padding: 0 20px;
+}
+ 
+.nav ul li:last-child {
+  border-right: none;
+}
+ 
+.nav ul li a {
+  text-decoration: none;
+  color: #ccc;
+  font: 25px/1 Helvetica, Verdana, sans-serif;
+  /*text-transform: uppercase;*/
+ 
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+ 
+.nav ul li a:hover {
+  color: #666;
+}
+ 
+.nav ul li.active a {
+  font-weight: bold;
+  color: #333;
+}
+#search {
+position:absolute;
+left: 900px;
+top:100px;
+
+
+
+}
+.slider{
+  margin-top: 40px;
+}
+.slider img{
+  max-width: 90%;
+margin-left: 20px;
+}
+
+.section{
+  width:100%;
+}
+.container {
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+.clear {
+  clear: both;
+}
+.item ul{
+
+}
+#firest-sec-ul{
+  list-style: none;
+  list-style-type: none;
+}
+.first-sec {
+  padding: 20px 0;
+}
+.first-sec .item{
+  
+  float: left;
+    width: 30.333333%;
+    padding-left: 1.5%;
+    padding-right: 1.5%;
+}
+
+.first-sec .item h3{
+  text-align: center;
+  color: #592147;
+  margin: 22px 0px 15px 0px;
+}
+
+
+
+.first-sec .item a{
+  font-size: 18px;
+  line-height: 22px;
+  font-weight: bold;
+ 
+  text-decoration: none;
+  color: #592147;
+}
+.footer{
+      margin-top: 50px;
+}
+
+@media (max-width: 800px) {
+  .first-sec .item {
+    width: 100%;
+  }
+}
+
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 50%;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+
+
+
+.fa-youtube {
+  background: #bb0000;
+  color: white;
+}
+
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+
+.fa-rss {
+  background: #ff6600;
+  color: white;
+}
+
+.socialmedia {
+    text-align: center;
+}
+
+.sendemail {
+  text-align: center;
+  margin-top: 30px;
+}
