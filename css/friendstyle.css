@@ -12,7 +12,7 @@ nav {
 }
  
 .nav ul {
-  overflow: auto;
+  /*overflow: auto;*/
   list-style-type: none;
   position:absolute;
   left:400px;
@@ -59,14 +59,139 @@ top:100px;
 
 
 }
+/* slider */
+button {
+  color: #FFF;
+  font-size: 12px;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  border-radius: 4px;
+  cursor: pointer;
+  border: none;
+  background: #c48ec8;
+  padding: 8px 14px;
+}
+
+ul.animate {
+  -webkit-transition: -webkit-transform 0.75s cubic-bezier(0.860, 0.000, 0.070, 1.000); 
+       -moz-transition: transform 0.75s cubic-bezier(0.860, 0.000, 0.070, 1.000); 
+         -o-transition: transform 0.75s cubic-bezier(0.860, 0.000, 0.070, 1.000); 
+            transition: transform 0.75s cubic-bezier(0.860, 0.000, 0.070, 1.000); /* ease-in-out */ 
+}
+
+.stage {
+  width: 76%;
+  margin: 0 auto;
+  margin-top: 50px;
+  padding: 0 12%;
+  text-align: center;
+  overflow: hidden;
+}
+  
+.sldr {
+  max-width: 825px;
+  margin: 0 auto;
+  overflow: visible;
+  position: relative;
+  clear: both;
+  display: block;
+}
+
+.sldr > ul > li {
+  float: left;
+  display: block;
+  width: 825px;
+}
+
+div.skew {
+  max-width: 825px;
+  margin: 0 auto;
+
+  display: block;
+  overflow: hidden;
+
+  -webkit-transform: skewX(16deg);
+       -moz-transform: skewX(16deg);
+        -ms-transform: skewX(16deg);
+            transform: skewX(16deg);
+}
+
+div.skew > div.wrap {
+  display: block;
+  overflow: hidden;
+
+  -webkit-transform: skewX(-16deg);
+     -moz-transform: skewX(-16deg);
+      -ms-transform: skewX(-16deg);
+          transform: skewX(-16deg);
+
+  margin-left: -10.1%;
+  width: 122%;
+}
+
+/*img {
+  max-width: 1000px;
+  width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}*/
+
+.selectors {
+  /*margin: 15px 0 0;*/
+}
+
+.selectors li {
+  font-size: 46px;
+  line-height: 32px;
+  display: inline;
+  padding: 0 2px; 
+}
+
+.selectors li a {
+  text-decoration: none;
+}
+
+.selectors li.focalPoint a {
+  color: #CCC;
+  cursor: default;
+}
+
+.captions div {
+  left: 200%;
+  position: fixed;
+  opacity: 0;
+
+  -webkit-transition: opacity 0.75s cubic-bezier(0.860, 0.000, 0.070, 1.000); 
+       -moz-transition: opacity 0.75s cubic-bezier(0.860, 0.000, 0.070, 1.000); 
+         -o-transition: opacity 0.75s cubic-bezier(0.860, 0.000, 0.070, 1.000); 
+            transition: opacity 0.75s cubic-bezier(0.860, 0.000, 0.070, 1.000); /* ease-in-out */
+}
+
+.captions div.focalPoint {
+  opacity: 1;
+  left: inherit;
+  position: static;
+}
+
+.clear {
+  display: block;
+  width: 100%;
+  height: 0px;
+  overflow: hidden;
+  clear: both;
+}
+/*slider*/
+/*
 .slider{
   margin-top: 40px;
+  max-width: 90%;
 }
 .slider img{
   max-width: 90%;
 margin-left: 20px;
 }
-
+*/
 .section{
   width:100%;
 }
@@ -112,6 +237,44 @@ margin-left: 20px;
   text-decoration: none;
   color: #592147;
 }
+
+.item
+{
+    display:inline-block;
+    border:0;
+    width:100px;
+    height:150px;
+    position: relative;
+    -webkit-transition: all 200ms ease-in;
+    -webkit-transform: scale(1); 
+    -ms-transition: all 200ms ease-in;
+    -ms-transform: scale(1); 
+    -moz-transition: all 200ms ease-in;
+    -moz-transform: scale(1);
+    transition: all 200ms ease-in;
+    transform: scale(1);   
+
+}
+.item:hover
+{
+    box-shadow: 0px 0px 150px #000000;
+    z-index: 2;
+    -webkit-transition: all 200ms ease-in;
+    -webkit-transform: scale(1.5);
+    -ms-transition: all 200ms ease-in;
+    -ms-transform: scale(1.5);   
+    -moz-transition: all 200ms ease-in;
+    -moz-transform: scale(1.5);
+    transition: all 200ms ease-in;
+    transform: scale(1.5);
+}
+
+
+
+
+
+
+
 .footer{
       margin-top: 50px;
 }
@@ -149,6 +312,7 @@ margin-left: 20px;
 
 
 
+
 .fa-youtube {
   background: #bb0000;
   color: white;
@@ -168,6 +332,55 @@ margin-left: 20px;
     text-align: center;
 }
 
+/*input:invalid {
+ border: 2px solid red;
+}
+
+input:valid {
+  border: 2px solid black;
+}*/
+
+input[type=email]{
+  -webkit-appearance: none;
+
+ 
+  border: 1px solid #333;
+  margin: 0;
+
+  font-family: inherit;
+  font-size: 90%;
+
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* This is our style for the invalid fields */
+input:invalid{
+  border-color: #900;
+  background-color: #FDD;
+}
+
+input:focus:invalid {
+  outline: none;
+}
+
+/* This is the style of our error messages */
+.error {
+  width  : 100%;
+  padding: 0;
+ 
+  font-size: 80%;
+  color: white;
+  background-color: #900;
+  border-radius: 0 0 5px 5px;
+ 
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.error.active {
+  padding: 0.3em;
+}
 .sendemail {
   text-align: center;
   margin-top: 30px;
