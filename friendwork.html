@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<head>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="css/friendstyle.css">
+<link rel="stylesheet" type="text/css" href="css/sweet-alert.css">
+
+<script type="text/javascript" href="js/jquery.min.js"></script>
+<script type="text/javascript" href="js/jquery.sldr.js"></script>
+<script type="text/javascript" href="js/jquery-1.10.2.min.js"></script>
+<script type="text/javascript" href="js/sweet-alert.min.js"></script>
+<script type="text/javascript" href="js/sweet-alert.js"></script>
+<style type="text/css">
+
+
+</style>
+</head>
+<body>
+<div class="nav">
+
+<img src="imgs/friends.jpg"/>
+<ul class="menu">
+
+<li><a href="#"> Main</a></li>
+<li ><a  href="#sectionpart">Services </a></li>
+<li><a href="#sectionpart">News </a></li>
+<li><a href="ContactUs.html"> ContactUs </a></li>
+<li><a href="AboutUs.html"> AboutUs</a></li><br>
+</ul>
+<form id="search">
+<label>Search</label>
+<input type="text" name="search">
+
+</form>
+</div>
+<!-- <div class="slider"> -->
+<!-- <img src="imgs/slide1.png"> -->
+<!--slider-->
+<div class="stage">
+
+
+
+
+  <div id="SLDR-ONE" class="sldr">
+    <ul class="wrp animate">
+      <li class="elmnt-one"><div class="skew"><div class="wrap"><img src="imgs/Lake.jpg" width="1000" height="563"></div></div></li>
+      <li class="elmnt-two"><div class="skew"><div class="wrap"><img src="imgs/Mountain-Range.jpg" width="1000" height="563"></div></div></li>
+      <li class="elmnt-three"><div class="skew"><div class="wrap"><img src="imgs/Mt-Fuji.jpg" width="1000" height="563"></div></div></li>
+      <li class="elmnt-four"><div class="skew"><div class="wrap"><img src="imgs/Pink-Forest.jpg" width="1000" height="563"></div></div></li>
+    </ul>
+  </div>
+
+  <div class="clear"></div>
+
+  <div class="captions">
+   <div class="focalPoint"><p><small>Lake</small></p></div>
+   <div><p><small>Mountain Range</small></p></div>
+   <div><p><small>Mt. Fuji</small></p></div>
+   <div><p><small>Pink Forest</small></p></div>
+  </div>
+
+  <ul class="selectors">
+    <li class="focalPoint"><a href="">•</a></li><li><a href="">•</a></li><li><a href="">•</a></li><li><a href="">•</a></li>
+  </ul>
+
+  <button class="sldr-prv sldr-nav prev">Prev</button>
+  <button class="sldr-nxt sldr-nav next">Next</button>
+
+<!--   <p style="float:left;">&#8596;&nbsp;</p>
+  <p style="float:right;">&nbsp;&#8596;</p> -->
+
+
+
+  <div class="clear"></div>
+
+ 
+</div>
+
+</div>
+<div class="section">
+
+      <section class="first-sec">
+        <!-- container -->
+        <div  id="sectionpart" class="container">
+          <!-- item -->
+          <div class="item">
+            
+            <h3>our services</h3>
+            <ul id="firest-sec-ul">
+            <li> <a href=""> this is the firest service </a></li>
+             <li> <a href=""> this is the secound service </a></li>
+              <li> <a href=""> this is the third service </a></li>
+            </ul>
+           
+            <a href="javascript:;">read more »</a>
+          </div>
+          <!-- item -->
+          <!-- item -->
+          <div class="item">
+            
+            <h3>our team</h3>
+            <ul id="secound-sec-ul">
+            <li> <a href=""> this is the first member </a></li>
+             <li> <a href=""> this is the secound member</a></li>
+              <li> <a href=""> this is the third member</a></li>
+            </ul>
+          
+            <a href="javascript:;">read more »</a>
+          </div>
+          <!-- item -->
+          <!-- item -->
+          <div class="item">
+ 
+            <h3>last news</h3>
+            <ul id="third-sec-ul">
+            <li> <a href=""> this is the first news</a></li>
+             <li> <a href=""> this is the secound news</a></li>
+              <li> <a href=""> this is the third news </a></li>
+            </ul>
+        
+            <a href="javascript:;">read more »</a>
+          </div>
+          <!-- item -->
+          <div class="clear"></div>
+        </div>
+        <!-- container -->
+      </section>
+
+</div>
+
+<div class="footer">
+
+<div class="socialmedia">
+
+
+<a href="#" class="fa fa-facebook"></a>
+<a href="#" class="fa fa-twitter"></a>
+
+<a href="#" class="fa fa-youtube"></a>
+<a href="#" class="fa fa-instagram"></a>
+
+<a href="#" class="fa fa-rss"></a>
+      
+
+
+</div>
+<form novalidate>
+<div class="sendemail">
+
+<input id="mail" type="email" placeholder="Enter your Email" name="emailtext"  required>
+ <span class="error" aria-live="polite"></span>
+<button id="sendButton" type="submit"> Send </button>
+</div>
+</form>
+</div>
+
+
+  <script type="text/javascript" href="js/sweet-alert.min.js"></script>
+<script type="text/javascript" href="js/sweet-alert.js"></script>
+<script src="js/jquery-1.10.2.min.js"></script>
+<script src="js/jquery.sldr.js"></script> 
+<script type="text/javascript">
+
+$( window ).load( function() {
+
+  $( '.sldr' ).each( function() {
+    var th = $( this );
+    th.sldr({
+      focalClass    : 'focalPoint',
+      offset        : th.width() / 2,
+      sldrWidth     : 'responsive',
+      nextSlide     : th.nextAll( '.sldr-nav.next:first' ),
+      previousSlide : th.nextAll( '.sldr-nav.prev:first' ),
+      selectors     : th.nextAll( '.selectors:first' ).find( 'li' ),
+      toggle        : th.nextAll( '.captions:first' ).find( 'div' ),
+      sldrInit      : sliderInit,
+      sldrStart     : slideStart,
+      sldrComplete  : slideComplete,
+      sldrLoaded    : sliderLoaded,
+      sldrAuto      : true,
+      sldrTime      : 5000,
+      hasChange     : true
+    });
+  });
+
+});
+
+/**
+ * Sldr Callbacks
+ */
+
+/**
+ * When the sldr is initiated, before the DOM is manipulated
+ * @param {object} args the slides, callback, and config of the slider
+ * @return null
+ */
+function sliderInit( args ) {
+
+}
+
+/**
+ * When individual slides are loaded
+ * @param {object} args the slides, callback, and config of the slider
+ * @return null
+ */
+function slideLoaded( args ) {
+
+}
+
+/**
+ * When the full slider is loaded, after the DOM is manipulated
+ * @param {object} args the slides, callback, and config of the slider
+ * @return null
+ */
+function sliderLoaded( args ) {
+
+}
+
+/**
+ * Before the slides change focal points
+ * @param {object} args the slides, callback, and config of the slider
+ * @return null
+ */
+function slideStart( args ) {
+
+}
+
+/**
+ * After the slides are done changing focal points
+ * @param {object} args the slides, callback, and config of the slider
+ * @return null
+ */
+function slideComplete( args ) {
+
+}
+//for alert//
+
+
+//  function myFunction(x) {
+  
+//     switch(x) {
+//     case 0:
+//         swal("Here's a message!");
+//         break;
+//     case 1:
+//         sweetAlert("Oops...", "Something went wrong!", "error");
+//         break;
+//     case 2:
+//         swal("Good job!", "You clicked the button!", "success");
+//         break;
+//       case 3: 
+//         swal({   title: "Are you sure?",   text: "Your will not be able to recover this imaginary file!",   type: "warning",   showCancelButton: true,   confirmButtonColor: "#DD6B55",   confirmButtonText: "Yes, delete it!",   cancelButtonText: "No, cancel plx!",   closeOnConfirm: false,   closeOnCancel: false }, function(isConfirm){   if (isConfirm) {     swal("Deleted!", "Your imaginary file has been deleted.", "success");   } else {     swal("Cancelled", "Your imaginary file is safe :)", "error");   } });
+//         break;
+//   }
+// }
+
+function myFunction(){
+ // var alert;
+//swal('Congratulations!', 'Your message has been successfully sent', 'success');
+alert("Thanks for sharing our Mail List");
+}
+
+document.getElementById("sendButton").addEventListener('click',function(){
+  myFunction()  
+})
+
+
+
+
+var form  = document.getElementsByTagName('form')[0];
+var email = document.getElementById('mail');
+var error = document.querySelector('.error');
+
+email.addEventListener("input", function (event) {
+  // Each time the user types something, we check if the
+  // email field is valid.
+  if (email.validity.valid) {
+    // In case there is an error message visible, if the field
+    // is valid, we remove the error message.
+    error.innerHTML = ""; // Reset the content of the message
+    error.className = "error"; // Reset the visual state of the message
+  }
+}, false);
+ form.addEventListener("submit", function (event) {
+   // Each time the user tries to send the data, we check
+   // if the email field is valid.
+   if (!email.validity.valid) {
+    
+    // If the field is not valid, we display a custom
+     // error message.
+     error.innerHTML = "I expect an e-mail, darling!";
+     error.className = "error active";
+    // And we prevent the form from being sent by canceling the event
+     event.preventDefault();
+   }
+ }, false);
+</script>
+<!-- <script type="text/javascript">
+swal("Good job!", "You clicked the button!", "success");
+</script>
+ -->
+<!-- trying to add alret -->
+<!-- <div>
+<h1></h1>
+  <h2>Source: Tristan Edwards</h2>
+
+
+<button onclick="myFunction(0)">Show Message</button>
+</div>
+<div>
+  <button onclick="myFunction(1)">Show Alert</button>
+</div>
+<div>
+    <button onclick="myFunction(2)">Show Success</button>
+</div>
+<div>
+<button onclick="myFunction(3)">It's Complicated</button>
+</div>
+<h6>The MIT License (MIT)</h6>
+</div> -->
+
+
+
+</body>
+</html>
